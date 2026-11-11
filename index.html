@@ -1,18 +1,75 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="strict-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://chinese-quest-atlas.vercel.app; img-src 'self' data:; font-src 'self'; frame-src 'none'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <title>Chinese Quest Atlas Classroom</title>
-    <link rel="stylesheet" href="./classroom/styles.css">
-  <link rel="stylesheet" href="./homepage.css"></head>
-  <body>
-    <div id="root">
-      <main class="shell"><p role="status">Loading classroom…</p></main>
-    </div>
-    <script src="./classroom/config.js"></script>
-    <script type="module" src="./homepage.js"></script>
-  </body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="strict-origin"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://firestore.googleapis.com https://chinese-quest-atlas.vercel.app; img-src 'self' data:; font-src 'self'; frame-src 'none'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'"><title>Chinese Quest Atlas</title><link rel="stylesheet" href="./homepage.css"><link rel="icon" type="image/svg+xml" href="./icon.svg"></head><body>
+    <main class="gateway">
+      <div class="shell">
+        <header class="header">
+          <div class="topbar">
+            <p class="eyebrow">Chinese learning · classroom quests</p>
+            <a class="teacherAccess" href="https://chinese-quest-atlas.vercel.app/teacher-hub">
+              Teacher Hub
+            </a>
+          </div>
+          <h1>CHINESE QUEST ATLAS</h1>
+          <p class="intro">Choose where you would like to begin.</p>
+        </header>
+
+        <section class="card learningCard" aria-labelledby="learning-title">
+          <div class="sectionCopy">
+            <span class="sectionNumber">01</span>
+            <div>
+              <p class="kicker">CLASSROOM</p>
+              <h2 id="learning-title">STUDENT ACCESS</h2>
+              <p>Log in to continue your Chinese learning path.</p><p class="comingSoon">First-time login: If school Wi-Fi doesn't work, try logging in at home or ask your teacher for help.</p><p class="comingSoon">Account help: Select ACTIVATE ACCOUNT or RESET PASSWORD, then return here to log in.</p>
+            </div>
+          </div>
+
+          <div class="learningAccess"><div id="root"><div class="gatewayForm login-form">
+            <div class="fields"><p>Open your student classroom to log in and continue learning.</p></div>
+            <a class="submitButton classroomEntry" href="./classroom/">ENTER CLASSROOM</a>
+            <div class="modePrompt"><span>First time here?</span>
+              <a href="https://chinese-quest-atlas.vercel.app/" title="Open Vercel, then choose ACTIVATE ACCOUNT.">ACTIVATE ACCOUNT</a>
+            </div>
+            <div class="modePrompt"><span>Cannot log in?</span>
+              <a href="https://chinese-quest-atlas.vercel.app/" title="Open Vercel, then choose RESET PASSWORD.">RESET PASSWORD</a>
+            </div>
+          </div></div></div>
+        </section>
+
+        <div class="secondaryGrid">
+          <section class="card atlasCard" aria-labelledby="atlas-title">
+            <div class="atlasEmblem" aria-hidden="true">
+              <svg viewBox="0 0 64 64" focusable="false">
+                <circle cx="32" cy="32" r="25" />
+                <circle cx="32" cy="32" r="15" />
+                <path d="M32 7v10M32 47v10M7 32h10M47 32h10" />
+                <path class="emblemNeedle" d="M32 17l6 15-6 15-6-15 6-15Z" />
+              </svg>
+            </div>
+            <div>
+              <p class="kicker">EXPLORE</p>
+              <h2 id="atlas-title">ATLAS LINK</h2>
+              <p>Enter Atlas Link and discover the active quest signal.</p>
+              <a class="primaryLink" href="https://chinese-quest-atlas.vercel.app/atlas-link">ENTER ATLAS LINK</a>
+            </div>
+          </section>
+
+          <section class="card feedbackCard" aria-labelledby="feedback-title">
+            <div>
+              <p class="kicker">HELP US IMPROVE</p>
+              <h2 id="feedback-title">FEEDBACK</h2>
+              <p>Share a suggestion or report a problem.</p>
+            </div>
+            <div>
+              <button class="unavailableButton" type="button" disabled>
+                LEAVE FEEDBACK
+              </button>
+              <p class="comingSoon">
+                Coming soon · Please do not include personal information.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+      <footer class="copyright">© 2026 Rhoda Ludan ZHANG</footer>
+    </main>
+<script src="./classroom/config.js"></script><script type="module" src="./homepage.js"></script></body></html>
